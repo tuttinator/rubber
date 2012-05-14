@@ -47,7 +47,7 @@ cloud_providers:
     # ap-southeast-2
     #
     region: us-east-1
-    
+
     # REQUIRED The amazon keys and account ID (digits only, no dashes) used to access the AWS API
     #
     access_key: XXX
@@ -93,7 +93,7 @@ cloud_providers:
     # If a spot instance request can't be fulfilled in 3 minutes, fallback to on-demand instance creation.  If not set,
     # the default is infinite.
     # spot_instance_request_timeout: 180
-    
+
   # Use an alternate cloud provider supported by fog.  This doesn't fully work
   # yet due to differences in providers within fog, but gives you a starting
   # point for contributing a new provider to rubber.  See rubber/lib/rubber/cloud(.rb)
@@ -169,7 +169,7 @@ prompt_for_security_group_sync: true
 # OPTIONAL: The packages to install on all instances
 # You can install a specific version of a package by using a sub-array of pkg, version
 # For example, packages: [[rake, 0.7.1], irb]
-packages: [postfix, build-essential, git-core, ec2-ami-tools, libxslt-dev, ntp]
+packages: [postfix, build-essential, git-core, ec2-ami-tools, libxslt-dev, ntp, postgresql-contrib]
 
 # OPTIONAL: gem sources to setup for rubygems
 # gemsources: ["http://rubygems.org", "http://gems.github.com"]
